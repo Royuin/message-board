@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  ul
+    each val in messages
+      li
+        p #{val.text}
+        p By: #{val.user}
+        p Posted on: #{val.added}
