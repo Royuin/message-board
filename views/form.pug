@@ -1,0 +1,12 @@
+extends layout 
+
+block content
+  h2 Form 
+  form(method='Post' action="/new") 
+    label(for='author') Author
+    input(type="text")
+
+    label(for='message') Message 
+    input(type='text')
+    button(type='submit') Submit
+    
